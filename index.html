@@ -6,6 +6,22 @@
 <body>
 <h1>It's alive!</h1>
 <p>Voor nu: kijk nog naar <a href="https://haroen.me/notes-eoict">https://haroen.me/notes-eoict</a></p>
+{% assign repos = site.github.public_repositories | sort: 'created_at' | reverse%}
+  {% for repo in repos %}
+  {% unless repo.fork %}
+  <article>
+    {{repo.created_at}}
+    <h2><a href="{{ repo.html_url }}">{{ repo.name }}</a></h2>
+    {% if repo.has_pages %}
+    <a href="https://ikdoeict-notes.github.io/{{ repo.name }}" class="ext">https://ikdoeict-notes.github.io/{{ repo.name }}</a>
+    {% endif %}
+    {% if repo.homepage %}
+    <a href="{{repo.homepage}}" class="ext">{{ repo.name }}</a>
+    {% endif %}
+    <p>{{ repo.description}}</p>
+  </article>
+  {% endunless %}
+  {% endfor %}
 <footer>
   <p>Vind ons op <a href="https://github.com/ikdoeict-notes">github.com/ikdoeict-notes</a></p>
 </footer>
