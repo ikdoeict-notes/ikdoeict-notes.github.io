@@ -4,29 +4,55 @@
 <html>
 <head>
   <title>Notes ikdoeict</title>
+  <style>
+    body {
+      font-family: system, -apple-system, Roboto, sans-serif;
+    }
+    .repos {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+    }
+    article {
+      width: 50%;
+      padding: 1em;
+      margin: .2em;
+      background-color: grey;
+      word-wrap: break-word;
+    }
+  </style>
 </head>
 <body>
-<h1>It's alive!</h1>
-<p>Voor nu: kijk nog naar <a href="https://haroen.me/notes-eoict">https://haroen.me/notes-eoict</a></p>
-<div class="repos">
-  {% assign repos = site.github.public_repositories | sort: 'created_at' | reverse%}
-  {% for repo in repos %}
-  {% unless repo.fork %}
-  <article>
-    {{repo.created_at}}
-    <h2><a href="{{ repo.html_url }}">{{repo.name}}</a></h2>
-    {% if repo.homepage %}
-    <a href="{{repo.homepage}}">homepage</a>
-    {% elsif repo.has_pages %}
-    <a href="https://haroen.me/{{ repo.name }}">homepage</a>
-    {% endif %}
-    <p>{{ repo.description}}</p>
-  </article>
-  {% endunless %}
-  {% endfor %}
-</div>
-<footer>
-  <p>Vind ons op <a href="https://github.com/ikdoeict-notes">github.com/ikdoeict-notes</a></p>
-</footer>
+  <h1>ikdoeict notes</h1>
+  <p>Alle notities handig voor de richting elektronica-ict aan Odisee Gent</p>
+  <p>Voor nu: kijk nog naar <a href="https://haroen.me/notes-eoict">https://haroen.me/notes-eoict</a></p>
+  <section>
+    <h2>De vakken:</h2>
+    <div class="repos">
+      {% assign repos = site.github.public_repositories | sort: 'created_at' | reverse%}
+      {% for repo in repos %}
+      {% unless repo.fork %}
+      <article>
+        <h2><a href="{{ repo.html_url }}">{{repo.name}}</a></h2>
+        {% if repo.homepage %}
+        <a href="{{repo.homepage}}">site</a>
+        {% elsif repo.has_pages %}
+        <a href="https://haroen.me/{{ repo.name }}">site</a>
+        {% endif %}
+        <p>{{ repo.description}}</p>
+      </article>
+      {% endunless %}
+      {% endfor %}
+    </div>
+  </section>
+  <footer>
+    <p>Vind ons op <a href="https://github.com/ikdoeict-notes">github.com/ikdoeict-notes</a></p>
+    <p>Mogelijk gemaakt door: </p>
+    {% for user in site.github.contributors %}
+        <a href="{{user.html_url}}">{{user.login}}</a>,
+    {% endfor %}
+  </footer>
 </body>
 </html>
