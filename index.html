@@ -51,7 +51,7 @@
     <a href="http://onderwijsaanbod.odisee.be/opleidingen/n/SC_51531545.htm#bl=all">Onderwijsaanbod</a>
     <p>Vind ons op <a href="https://github.com/ikdoeict-notes">github.com/ikdoeict-notes</a></p>
     <p>Mogelijk gemaakt door: </p>
-    {% for user in site.github.organization_members %}
+    {% for user in site.github.contributors %}
         <a href="{{user.html_url}}">{{user.login}}</a>,
     {% endfor %}
   </footer>
