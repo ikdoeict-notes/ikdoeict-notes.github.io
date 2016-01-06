@@ -7,18 +7,23 @@
   <style>
     body {
       font-family: system, -apple-system, Roboto, sans-serif;
+      max-width: 60em;
+      margin: 0 auto;
     }
     .repos {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -ms-flexbox;
       display: flex;
       -webkit-flex-wrap: wrap;
-      -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       -o-flex-wrap: wrap;
       flex-wrap: wrap;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
     }
     article {
       padding: 1em;
@@ -40,7 +45,7 @@
       {% unless repo.fork %}
       <article>
         <h2><a href="{{ repo.html_url }}">{{repo.name}}</a></h2>
-        {% if repo.homepage %}
+        {% if repo.homepage.size > 0 %}
         <a href="{{repo.homepage}}">site</a>
         {% elsif repo.has_pages %}
         <a href="https://haroen.me/{{ repo.name }}">site</a>
@@ -56,7 +61,7 @@
     <p>Vind ons op <a href="https://github.com/ikdoeict-notes">github.com/ikdoeict-notes</a></p>
     <p>Mogelijk gemaakt door: </p>
     {% for user in site.github.contributors %}
-        <a href="{{user.html_url}}">{{user.login}}</a>,
+    <a href="{{user.html_url}}">{{user.login}}</a>,
     {% endfor %}
   </footer>
 </body>
