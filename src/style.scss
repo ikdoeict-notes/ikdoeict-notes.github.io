@@ -1,11 +1,20 @@
 ---
 ---
+$accent: #6ABED8;
 
 body {
   font-family: system, -apple-system, Roboto, sans-serif;
   max-width: 60em;
   margin: 0 auto;
   text-align: center;
+}
+
+a {
+  color: $accent;
+
+  &:visited {
+    color: darken($accent,10%);
+  }
 }
 
 .search {
@@ -58,4 +67,11 @@ article {
 
 footer {
   font-size: .8em;
+  padding: 1em;
+
+  img {
+    border-radius: 100%;
+    width: 3em;
+    height: 3em;
+  }
 }
