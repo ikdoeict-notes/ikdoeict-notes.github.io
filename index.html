@@ -49,7 +49,7 @@
     <div class="contributors">
       {% for user in site.data.contributors %}
       {% if user.github %}
-        <a href="https://github.com/{{user.github}}">
+        <a href="https://github.com/{{user.github}}" class="image">
       {% endif %}
           <img src="{{user.avatar}}" alt="{{user.name}}" title="{{user.name}}">
       {% if user.github %}
