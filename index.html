@@ -47,8 +47,14 @@
     <p>Vind ons op <a href="https://github.com/ikdoeict-notes">github.com/ikdoeict-notes</a></p>
     <p>Mogelijk gemaakt door: </p>
     <div class="contributors">
-      {% for user in site.github.contributors %}
-      <a href="{{user.html_url}}"><img src="{{user.avatar_url}}" alt="" title="{{user.login}}"></a>
+      {% for user in site.data.contributors %}
+      {% if user.github %}
+        <a href="https://github.com/{{user.github}}">
+      {% endif %}
+          <img src="{{user.avatar}}" alt="{{user.name}}" title="{{user.name}}">
+      {% if user.github %}
+        </a>
+      {% endif %}
       {% endfor %}
     </div>
   </footer>
