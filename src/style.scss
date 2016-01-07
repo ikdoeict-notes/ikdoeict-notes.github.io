@@ -29,8 +29,14 @@ a {
   input {
     font-size: 3em;
     border-radius: .2em;
-    border: 0;
+    padding: .2em;
+    border: 1px solid;
     width: 100%;
+
+    &:focus {
+      border: 2px solid;
+      outline: none;
+    }
   }
 }
 
