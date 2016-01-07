@@ -1,6 +1,7 @@
 ---
 ---
 $accent: #6ABED8;
+$light: #F0F0F0;
 
 body {
   font-family: system, -apple-system, Roboto, sans-serif;
@@ -60,7 +61,7 @@ a {
 article {
   padding: 1em;
   margin: .2em;
-  background-color: #F0F0F0;
+  background-color: $light;
   border-radius: .2em;
   word-wrap: break-word;
 }
