@@ -1,45 +1,31 @@
 ---
 ---
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
+  <meta charset="utf-8" />
   <title>Notes ikdoeict</title>
-  <style>
-    body {
-      font-family: system, -apple-system, Roboto, sans-serif;
-      max-width: 60em;
-      margin: 0 auto;
-    }
-    .repos {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      -o-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-    }
-    article {
-      padding: 1em;
-      margin: .2em;
-      background-color: grey;
-      word-wrap: break-word;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <!-- todo: favicon -->
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
   <h1>ikdoeict notes</h1>
   <p>Alle notities handig voor de richting elektronica-ict aan Odisee Gent</p>
   <p>Voor nu: kijk nog naar <a href="https://haroen.me/notes-eoict">https://haroen.me/notes-eoict</a></p>
-  <section>
+  <section class="repos">
     <h2>De vakken:</h2>
-    <div class="repos">
+    <div class="search">
+      <input type="text" placeholder="zoek een vak">
+      <!-- <button>zoek</button> -->
+    </div>
+    <div class="repos--list">
       {% assign repos = site.github.public_repositories | sort: 'created_at' | reverse%}
       {% for repo in repos %}
       {% unless repo.fork %}
@@ -48,7 +34,7 @@
         {% if repo.homepage.size > 0 %}
         <a href="{{repo.homepage}}">site</a>
         {% elsif repo.has_pages %}
-        <a href="https://haroen.me/{{ repo.name }}">site</a>
+        <a href="https://ikdoeict.github.io/{{ repo.name }}">site</a>
         {% endif %}
         <p>{{ repo.description}}</p>
       </article>
@@ -64,5 +50,6 @@
     <a href="{{user.html_url}}">{{user.login}}</a>,
     {% endfor %}
   </footer>
+  <script src="src/main.js"></script>
 </body>
 </html>
