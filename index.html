@@ -36,7 +36,7 @@
         <a href="https://ikdoeict.github.io/{{ repo.name }}">site</a>
         {% endif %}
         <p class="main">{{ repo.description}}</p>
-        <p class="tiny">aangepast op {{repo.pushed_at | date: "%F %H:%M"}}</p>
+        <p class="tiny">aangepast op {{repo.pushed_at | date: "%F %R %Z"}}</p>
       </article>
       {% endunless %}
       {% endfor %}
