@@ -25,7 +25,8 @@
       <!-- <button>zoek</button> -->
     </div>
     <div class="repos--list">
-      {% for repo in site.github.public_repositories %}
+      {% assign repos = site.github.public_repositories | sort: 'pushed_at' | reverse %}
+      {% for repo in repos %}
       {% unless repo.fork %}
       <article>
         <h2><a href="{{ repo.html_url }}">{{repo.name}}</a></h2>
@@ -34,7 +35,8 @@
         {% elsif repo.has_pages %}
         <a href="https://ikdoeict.github.io/{{ repo.name }}">site</a>
         {% endif %}
-        <p>{{ repo.description}}</p>
+        <p class="main">{{ repo.description}}</p>
+        <p class="tiny">aangepast op {{repo.pushed_at | date: "%F %H:%M"}}</p>
       </article>
       {% endunless %}
       {% endfor %}

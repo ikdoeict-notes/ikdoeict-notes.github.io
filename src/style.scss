@@ -2,12 +2,14 @@
 ---
 $accent: #6ABED8;
 $light: #F0F0F0;
+$text: #0C0C0C;
 
 body {
   font-family: system, -apple-system, Roboto, sans-serif;
   max-width: 60em;
   margin: 0 auto;
   text-align: center;
+  color: $text;
 }
 
 a {
@@ -41,11 +43,12 @@ h1 a {
     border-radius: .2em;
     padding: .2em;
     border: 0;
-    box-shadow: black 0 0 0 1px inset;
+    box-shadow: $text 0 0 0 1px inset;
     width: 100%;
+    color: $text;
 
     &:focus {
-      box-shadow: black 0 0 0 2px inset;
+      box-shadow: $text 0 0 0 2px inset;
       outline: none;
     }
   }
@@ -84,6 +87,28 @@ article {
   border-radius: .2em;
   word-wrap: break-word;
   max-width: 20em;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  .main {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    lex-grow: 1;
+  }
+
+  .tiny {
+    font-size: .4em;
+    color: lighten($text,30%);
+  }
 }
 
 a.image {
