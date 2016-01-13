@@ -25,7 +25,6 @@
       <!-- <button>zoek</button> -->
     </div>
     <div class="repos--list">
-      <!-- {% assign repos = site.github.public_repositories | sort: 'created_at' | reverse %} -->
       {% for repo in site.github.public_repositories %}
       {% unless repo.fork %}
       <article>
