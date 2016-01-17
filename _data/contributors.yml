@@ -1,61 +1,87 @@
+
 - name: Haroen Viaene
-  github: haroenv
+  url: https://github.com/haroenv
   avatar: https://avatars2.githubusercontent.com/haroenv
+
 - name: Robin Maenhout
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hprofile-xtp1/v/t1.0-1/p320x320/11208629_10205108137395991_2236554397302416113_n.jpg?oh=cc784770d4704dd5143074f0c6325d0f&oe=570D0016
+
 - name: Hanne Goossens
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hprofile-xlf1/v/t1.0-1/p320x320/11048264_10207202291646425_2041432517297207415_n.jpg?oh=fedbf350835a8cc3ebacd82326b9979f&oe=570A2D0E
+
 - name: Brecht Van Eeckhoudt
-  github: Fescron
+  url: https://github.com/Fescron
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11150508_10202775020136940_3697334726266130093_n.jpg?oh=736963c7e6413f6903e9324353c2ff65&oe=56FD7D5C
+
 - name: Umut Saglam
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/p320x320/12341270_1132362990108232_5677571445702174620_n.jpg?oh=dc4a2b878b0d3745226ec5a5753488d4&oe=5706D942
+
 - name: Lode Alaert
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xtp1/t31.0-8/10842127_10206055291960810_8863381929862938172_o.jpg
+
 - name: Gaëtan Steijaert
+  url: http://exe-file-webdevelopment.be/
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/12004077_10153658165376908_2010650332532126685_n.jpg?oh=0c2fddcebba8d4ff3f7cbbc722f36628&oe=57130D7E
+
 - name: Simon Parewyck
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/10610760_10203558353022981_7665574172382142939_n.jpg?oh=5ec2c1c238172934251193cfa651d470&oe=57046D5B
+
 - name: Arnaud Weyts
-  github: arnaudweyts
+  url: https://github.com/arnaudweyts
   avatar: https://avatars2.githubusercontent.com/arnaudweyts
+
 - name: Mike Lauwers
-  github: Mike1401
+  url: https://github.com/Mike1401
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/12244265_10203615873837044_7299061968778597677_o.jpg
+
 - name: Maliek Meerschaert
-  github: Maliek
+  url: https://github.com/Maliek
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/11260903_862232060492309_4800461162471838914_n.jpg?oh=9ba4bbaec6ec3c505f5b4f103cef38d2&oe=5706935A
+
 - name: Elias Meire
-  github: eliasmeire
+  url: https://github.com/eliasmeire
   avatar: https://avatars2.githubusercontent.com/eliasmeire
+
 - name: Wietse Vluymans
-  github: wietsevluymans
+  url: https://github.com/wietsevluymans
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/11745733_10206401895398100_6588671612691578098_n.jpg?oh=38561ffa3c82c3b575bb1c8b287d1a8a&oe=5701216A
+
 - name: Andreas Backx
-  github: AndreasBackx
+  url: https://github.com/AndreasBackx
   avatar: https://avatars2.githubusercontent.com/AndreasBackx
+
 - name: Bram Van den Bulcke
-  github: Bram-Vdb
+  url: https://github.com/Bram-Vdb
   avatar: https://avatars2.githubusercontent.com/Bram-Vdb
+
 - name: Polli162
-  github: polli162
+  url: https://github.com/polli162
   avatar: https://avatars2.githubusercontent.com/Polli162
+
 - name: Dwight Van der Velpen
-  github: Dwight-Fr34k
+  url: https://github.com/Dwight-Fr34k
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xlp1/v/t1.0-9/10380304_1147458735279198_8162019342211423952_n.jpg?oh=d1eb0f83d3f3e828697a6505dbd82e29&oe=57451F48
+
 - name: Louis Devreese
-  github: LouisDevreese
+  url: https://github.com/LouisDevreese
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/12141119_10207743829372094_6314831878873613305_o.jpg
+
 - name: Simon Seghers
-  github: simonseghers
+  url: https://github.com/simonseghers
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xft1/t31.0-8/10498614_280478402156315_3504117587254886182_o.jpg
+
 - name: Nicolas Henrotte
+  url: http://owenhoward.me
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/11227542_1476540315972945_6299250097511471019_o.jpg
+
 - name: Muhammed Abdullah Sarı
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/580566_2661879321894_1155883844_n.jpg?oh=513a0349df378a59750860aefafe905c&oe=573EFF0D
+
 - name: Anthony Mestdach
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/1956955_10204761369663490_800968072540835170_o.jpg
+
 - name: Jef Vermeire
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hprofile-xla1/v/t1.0-1/p320x320/12512604_942897129093306_1553641336154759029_n.jpg?oh=50435ff4fc37efa34d2ce62d7d155718&oe=574870BF
+
 - name: Shandor Gőgös
   avatar: https://scontent-ams2-1.xx.fbcdn.net/hprofile-xfa1/v/t1.0-1/p320x320/11130146_10204763439540510_3024996247378385761_n.jpg?oh=9418529fb3051b02f790160044b4b5ab&oe=56FF561B

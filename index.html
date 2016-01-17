@@ -49,11 +49,11 @@
     <p>Mogelijk gemaakt door: </p>
     <div class="contributors">
       {% for user in site.data.contributors %}
-      {% if user.github %}
-        <a href="https://github.com/{{user.github}}" class="image">
+      {% if user.url %}
+        <a href="{{user.url}}" class="image">
       {% endif %}
           <img src="{{user.avatar}}" alt="{{user.name}}" title="{{user.name}}">
-      {% if user.github %}
+      {% if user.url %}
         </a>
       {% endif %}
       {% endfor %}
