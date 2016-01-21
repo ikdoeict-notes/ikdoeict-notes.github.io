@@ -7,7 +7,7 @@
 window.addEventListener('DOMContentLoaded',function(){
   var search = document.querySelector('.search input');
   var courseNames = document.querySelectorAll('.repos--list h2 a');
-  var courseDescriptions = document.querySelectorAll('.repos--list p');
+  var courseDescriptions = document.querySelectorAll('.repos--list p.main');
 
   search.addEventListener('input',function(){
     for (var i = 0; i < courseNames.length; i++) {
