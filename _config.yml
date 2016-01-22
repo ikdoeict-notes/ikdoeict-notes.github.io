@@ -1,3 +1,5 @@
 gems:
   - jekyll-github-metadata
 repository: ikdoeict-notes/ikdoeict-notes.github.io
+sass:
+  style: compressed
