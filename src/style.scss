@@ -42,10 +42,14 @@ h1 a {
     font-size: 3em;
     border-radius: .2em;
     padding: .2em;
+    padding-right: 0;
     border: 0;
     box-shadow: $text 0 0 0 1px inset;
     width: 100%;
     color: $text;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
     &:focus {
       box-shadow: $text 0 0 0 2px inset;
