@@ -90,7 +90,6 @@ article {
   background-color: $light;
   border-radius: .2em;
   word-wrap: break-word;
-  max-width: 20em;
 
   display: -webkit-flex;
   display: -moz-flex;
@@ -102,6 +101,10 @@ article {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-flex: 1 1 15em;
+  -ms-flex: 1 1 15em;
+  flex: 1 1 15em;
 
   .main {
     -webkit-flex-grow: 1;
