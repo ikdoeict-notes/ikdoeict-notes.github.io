@@ -12,6 +12,34 @@ body {
   color: $text;
 }
 
+.banner {
+  background-color: #db1a1d;
+  padding: 1em;
+  border-radius: .2em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  animation: 1s help infinite;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  strong {
+    text-transform: uppercase;
+  }
+  a {
+    color: white !important;
+  }
+}
+
+@keyframes help {
+  0%,100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
 a {
   color: $accent;
 
